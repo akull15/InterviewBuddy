@@ -54,3 +54,35 @@
 - **HR / Behavioral**
 
 > ⚙️ Questions vary by company and experience level to ensure relevance and realism.
+>
+> ## 🚧 Future Scope & Improvements
+
+- 🔍 **Question Categorization**: Add support for topic-wise tags (e.g., dynamic programming, microservices, etc.).
+- 🧪 **Custom Difficulty Levels**: Allow users to select beginner, intermediate, or advanced level explicitly.
+- 🧑‍💼 **Role-based Tracks**: Create specialized tracks for roles like Data Scientist, Backend Engineer, SRE, etc.
+- 🌐 **Multi-language Support**: Enable support for non-English prompts and answers.
+- 🧠 **Answer Hints**: Provide structured hints before revealing full answers.
+- ☁️ **Cloud Logging & Analytics**: Store session logs in Firebase or Supabase for richer tracking.
+- 🎤 **Voice Input**: Integrate speech-to-text for real-time spoken responses.
+- 📱 **Responsive UI**: Improve mobile compatibility and responsiveness.
+- 🧩 **Plugin Support**: Allow integration with LinkedIn profiles or ATS resume parsers for contextual interviews.
+
+---
+
+## 📁 Folder Structure
+GenAi-Interview-Preparation/
+│
+├── .env # API keys and environment variables
+├── app.py # Main Streamlit application
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+│
+├── outputs/ # UI screenshots for README
+│ ├── 1.png
+│ └── 2.png
+│
+│── env.py # Loads GEMINI_API_KEY
+│── logger.py # Logs Q&A history to CSV
+│
+│── graph.py # LangGraph nodes and graph builder
+│── logger.py # (Optional) Saved session logs
