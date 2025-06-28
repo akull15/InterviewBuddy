@@ -58,11 +58,9 @@
 > ## 🚧 Future Scope & Improvements
 
 - 🔍 **Question Categorization**: Add support for topic-wise tags (e.g., dynamic programming, microservices, etc.).
-- 🧪 **Custom Difficulty Levels**: Allow users to select beginner, intermediate, or advanced level explicitly.
 - 🧑‍💼 **Role-based Tracks**: Create specialized tracks for roles like Data Scientist, Backend Engineer, SRE, etc.
 - 🌐 **Multi-language Support**: Enable support for non-English prompts and answers.
 - 🧠 **Answer Hints**: Provide structured hints before revealing full answers.
-- ☁️ **Cloud Logging & Analytics**: Store session logs in Firebase or Supabase for richer tracking.
 - 🎤 **Voice Input**: Integrate speech-to-text for real-time spoken responses.
 - 📱 **Responsive UI**: Improve mobile compatibility and responsiveness.
 - 🧩 **Plugin Support**: Allow integration with LinkedIn profiles or ATS resume parsers for contextual interviews.
