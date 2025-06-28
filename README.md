@@ -20,8 +20,7 @@
 
 | Home Page | Evaluation Feedback |
 |-----------|---------------------|
-| ![](./screenshots/q.png) | ![](./screenshots/req.png) |
-
+| ![](./outputs/1.png) | ![](./outputs/2.png) |
 ---
 
 ## 🧠 How It Works
