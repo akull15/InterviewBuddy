@@ -18,9 +18,9 @@
 
 ## 🖼️ UI Preview
 
-| Home Page | Interview Prompt | Evaluation Feedback |
-|-----------|------------------|---------------------|
-| ![](./screenshots/q.png) | ![](./screenshots/req.png) | ![](./screenshots/readm.png) |
+| Home Page | Evaluation Feedback |
+|-----------|---------------------|
+| ![](./screenshots/q.png) | ![](./screenshots/req.png) |
 
 ---
 
