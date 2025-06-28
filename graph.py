@@ -18,12 +18,11 @@ from typing import TypedDict
 if not GEMINI_API_KEY:
     raise EnvironmentError("❌ GEMINI_API_KEY is missing in your .env file!")
 
-# ✅ Configure Gemini
+
 genai.configure(api_key=GEMINI_API_KEY)
 
-# ✅ Gemini Wrapper using correct model
 class GeminiLLM:
-    def __init__(self, model="gemini-1.5-pro"):  # <-- FIXED MODEL
+    def __init__(self, model="gemini-1.5-pro"):  
         self.model = genai.GenerativeModel(model)
 
     def predict(self, prompt: str) -> str:
@@ -36,13 +35,13 @@ class GeminiLLM:
 # ✅ Initialize the LLM
 llm = GeminiLLM()
 
-# --- 🔹 Generate Interview Question ---
+# ---  Generate Interview Question ---
 def ask_question(state):
     company = state.get("company", "a tech company")
     round_type = state.get("round_type", "DSA")
     experience_level = state.get("experience_level", "beginner")  # Default level
 
-    # Company-specific styles
+    
     company_styles = {
         "Google": "emphasizing algorithmic depth and problem-solving",
         "Amazon": "focusing on leadership principles and scalable systems",
@@ -53,7 +52,7 @@ def ask_question(state):
     }
     company_style = company_styles.get(company, "for a top tech company")
 
-    # Tailor prompt based on round type and experience level
+    
     if round_type == "DSA":
         prompt = (
             f"Generate a {experience_level}-level DSA interview question {company_style}. "
@@ -184,7 +183,7 @@ def evaluate_answer(state):
     evaluation = llm.predict(prompt)
     return {"evaluation": evaluation}
 
-# --- 🔹 State Schema ---
+# ---  State Schema ---
 class InterviewState(TypedDict, total=False):
     name: str
     company: str
@@ -194,7 +193,7 @@ class InterviewState(TypedDict, total=False):
     answer: str
     evaluation: str
 
-# --- 🔹 Build LangGraph ---
+# --- Build LangGraph ---
 def build_graph():
     sg = StateGraph(InterviewState)
     sg.add_node("generate_question", ask_question)
